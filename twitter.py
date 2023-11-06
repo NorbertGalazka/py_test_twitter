@@ -20,7 +20,6 @@ class Twitter:
     def get_twitter_version(self):
         return Twitter.version
 
-
     def tweet_messages(self):
         return [tweet['message'] for tweet in self._tweets]
 
@@ -62,7 +61,7 @@ class Twitter:
         return re.findall("#(\\w+)", message)
 
 
-t2 = Twitter(backend='xd.txt', username='Norbi')
+t2 = Twitter(backend='twiter_user_files.txt', username='Norbi')
 t2.tweet('something1')
 print(t2.tweets())
 
